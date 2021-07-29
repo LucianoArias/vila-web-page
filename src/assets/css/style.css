@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif; }
+
+* img {
+  width: 100%;
+  height: auto; }
+
+body {
+  max-width: 100%;
+  max-height: 100%; }
+
+html {
+  scroll-behavior: smooth; }
+
+li {
+  list-style: none; }
+
+main {
+  width: 100%;
+  height: 100%; }
+
+header nav {
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
+  @media (min-width: 1200px) {
+    header nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; } }
+  @media (min-width: 200px) {
+    header nav .tittle {
+      padding: 12px;
+      margin-left: 10px;
+      color: #737373; } }
+  @media (min-width: 1200px) {
+    header nav .tittle {
+      width: 13%; } }
+  @media (min-width: 1200px) {
+    header nav .divConteiner {
+      width: 67%;
+      padding-right: 3%; } }
+  @media (min-width: 1200px) {
+    header nav .divConteiner ul {
+      display: flex;
+      justify-content: space-around; } }
+  header nav .registration {
+    width: 13%; }
+  header nav a {
+    color: #737373;
+    font-weight: 600; }
+  @media (min-width: 1200px) {
+    header nav .listSesion {
+      display: flex;
+      align-items: center; } }
+  @media (min-width: 1200px) {
+    header nav .carrito {
+      display: flex;
+      justify-content: flex-end; } }
+  @media (min-width: 1200px) {
+    header nav .carrito div {
+      width: 40%; } }
+  @media (min-width: 200px) {
+    header nav ul {
+      display: none; } }
+  @media (min-width: 1200px) {
+    header nav ul {
+      display: flex;
+      flex-direction: row; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    header nav ul a {
+      text-decoration: none; } }
+
+@media (min-width: 200px) {
+  header .menu-mobile {
+    position: fixed;
+    right: 10px;
+    top: 20px; } }
+
+header .menu-mobile a {
+  margin-top: 3px;
+  padding-right: 8px; }
+
+@media (min-width: 1200px) {
+  header .menu-mobile {
+    display: none; } }
+
+header .menu-mobile div {
+  width: 40px;
+  height: 40px; }
+  header .menu-mobile div img {
+    height: 100%;
+    width: auto; }
+
+header .menu-mobile button {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none !important; }
+  header .menu-mobile button:hover, header .menu-mobile button:focus, header .menu-mobile button:active {
+    background: transparent;
+    border: none;
+    outline: 0;
+    box-shadow: none !important; }
+
+header .dropdown-menu {
+  background: white;
+  border: 1px solid #737373;
+  padding: 20px; }
+  header .dropdown-menu a {
+    text-decoration: none;
+    color: #737373; }
+
+section {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 200px) {
+    section .divImage {
+      display: none; } }
+  @media (min-width: 1200px) {
+    section .divImage {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 130px; } }
+  section .listProduct div {
+    width: 100%;
+    height: auto; }
+    section .listProduct div img {
+      border-radius: 3%; }
+  section .listProduct ul {
+    padding: 0; }
+    @media (min-width: 200px) {
+      section .listProduct ul {
+        display: flex;
+        flex-direction: column;
+        margin: 65px;
+        margin-top: 120px; } }
+    @media (min-width: 768px) {
+      section .listProduct ul {
+        padding: 80px;
+        margin-top: 55px; } }
+    @media (min-width: 1200px) {
+      section .listProduct ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0; } }
+    @media (min-width: 200px) {
+      section .listProduct ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 2px 0px 17px 2px #a0a0a0; }
+        section .listProduct ul li:hover {
+          padding: 25px;
+          transition: .1s all;
+          box-shadow: 5px 0px 50px 10px #a0a0a0; }
+        section .listProduct ul li span {
+          font-size: 20px; }
+          section .listProduct ul li span:nth-of-type(1) {
+            margin-top: 20px; }
+        section .listProduct ul li div {
+          display: flex;
+          justify-content: center; }
+          section .listProduct ul li div hr {
+            border-color: black;
+            width: 20px; } }
+  @media (min-width: 200px) and (min-width: 200px) {
+    section .listProduct ul li button {
+      border: none;
+      width: 100%;
+      margin-top: 17px;
+      background-color: #DCFCD0;
+      padding: 3px;
+      border: 1px solid #737373;
+      border-radius: 3px;
+      font-weight: 600; } }
+    @media (min-width: 768px) {
+      section .listProduct ul li {
+        margin-bottom: 30px; } }
+    @media (min-width: 1200px) {
+      section .listProduct ul li {
+        width: 22%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5%; } }
+    @media (min-width: 1500px) {
+      section .listProduct ul li {
+        width: 19%;
+        display: flex;
+        margin: 7%; } }
+  section .about {
+    background-color: #737373;
+    padding: 40px; }
+    section .about h3 {
+      color: #DCFCD0;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 20px; }
+    section .about p {
+      color: #DCFCD0;
+      text-align: center;
+      font-weight: 700; }
+  section .contact {
+    background-color: #1b1b1b;
+    padding: 10px; }
+    @media (min-width: 1200px) {
+      section .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; } }
+    @media (min-width: 1200px) {
+      section .contact .containerFooterInfo {
+        display: flex;
+        justify-content: space-around;
+        width: 100%; } }
+    section .contact .containerFooterInfo ul li {
+      margin-bottom: 10px; }
+    section .contact a {
+      text-decoration: none;
+      color: white; }
+    section .contact .divInformation {
+      margin-top: 10px; }
+    @media (min-width: 200px) {
+      section .contact .mailBox {
+        display: flex;
+        flex-direction: column; } }
+    section .contact .mailBox span {
+      color: white;
+      margin-left: 30px; }
+      @media (min-width: 1200px) {
+        section .contact .mailBox span {
+          text-align: center;
+          font-size: 18px;
+          margin-bottom: 15px; } }
+    @media (min-width: 1200px) {
+      section .contact .mailBox .sendEmail {
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
+    section .contact .mailBox .inputEmail {
+      display: flex;
+      justify-content: center; }
+      @media (min-width: 1200px) {
+        section .contact .mailBox .inputEmail {
+          width: 40%; } }
+      section .contact .mailBox .inputEmail form {
+        width: 81%; }
+        @media (min-width: 1200px) {
+          section .contact .mailBox .inputEmail form {
+            width: 100%; } }
+        @media (min-width: 200px) {
+          section .contact .mailBox .inputEmail form input {
+            width: 100%;
+            background-color: #1b1b1b;
+            border: none;
+            border-bottom: #DCFCD0 solid;
+            margin-top: 20px; } }
+    section .contact .mailBox .buttonEmail {
+      display: flex;
+      justify-content: center; }
+      @media (min-width: 1200px) {
+        section .contact .mailBox .buttonEmail {
+          width: 20%; } }
+      @media (min-width: 200px) {
+        section .contact .mailBox .buttonEmail button {
+          width: 81%;
+          height: 45px;
+          margin: 10px;
+          border: none;
+          cursor: pointer; } }
+      @media (min-width: 1200px) {
+        section .contact .mailBox .buttonEmail button {
+          height: 38px; } }
+
+footer {
+  background-color: #737373;
+  text-align: center;
+  padding: 10px; }
